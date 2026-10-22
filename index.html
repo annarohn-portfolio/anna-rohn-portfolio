@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Rohn — Architecture Portfolio</title>
+  <meta name="description" content="Architecture portfolio of Anna Rohn, B.Arch candidate at the University of Texas at Austin School of Architecture. Seeking a summer 2027 internship." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23d8431f'/%3E%3C/svg%3E" />
+  <meta property="og:title" content="Anna Rohn — Architecture Portfolio" />
+  <meta property="og:description" content="B.Arch candidate, UT Austin School of Architecture. Seeking a summer 2027 architecture internship." />
+  <meta property="og:image" content="./img/hero-lab-clean.webp" />
+  <link rel="preload" as="image" href="./img/hero-lab-clean.webp" type="image/webp" />
+</head>
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
+
+  <header class="bar" id="bar">
+    <a class="bar__mark" href="#top" aria-label="Anna Rohn, back to top"><span>AR</span></a>
+    <nav class="bar__nav" aria-label="Primary">
+      <a class="bar__link bar__link--pdf" href="./Anna-Rohn-Portfolio-2026-Lite.pdf" download>Portfolio PDF</a>
+      <a class="bar__link bar__link--contact" href="mailto:annasrohn@gmail.com">Contact</a>
+      <button class="bar__btn" id="indexBtn" aria-expanded="false" aria-controls="index">Index</button>
+    </nav>
+  </header>
+
+  <div class="index" id="index" hidden>
+    <div class="index__inner">
+      <button class="index__close" id="indexClose" aria-label="Close index">Close</button>
+      <ol class="index__list" id="indexList"></ol>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero" id="hero" aria-labelledby="name">
+      <div class="hero__stage" id="heroStage">
+        <div class="roll roll--b" id="rollB" aria-hidden="true"><div class="roll__body"></div></div>
+        <div class="roll roll--t" id="rollT" aria-hidden="true"><div class="roll__body"></div><div class="roll__strap" id="rollStrap"></div></div>
+        <div class="hero__sheet" id="heroSheet">
+          <div class="hero__render" id="heroRender"><img id="heroImg" src="./img/hero-lab-clean.webp" width="2000" height="1167" alt="N Lamar Lab cutaway axonometric: perforated screens, floor plates and stairs" fetchpriority="high" /></div>
+          <div class="hero__wash" aria-hidden="true"></div>
+        </div>
+        <div class="hero__sweep" id="heroSweep" aria-hidden="true"></div>
+        <div class="hero__copy">
+          <p class="eyebrow" data-h>Architecture portfolio <i>/</i> 2026</p>
+          <div class="name-wrap">
+            <h1 class="name" id="name" aria-label="Anna Rohn">
+              <span class="name__row" aria-hidden="true"><b>A</b><b>N</b><b>N</b><b>A</b></span>
+              <span class="name__row" aria-hidden="true"><b>R</b><b>O</b><b>H</b><b>N</b></span>
+            </h1>
+          </div>
+          <span class="hero__hline" id="heroHline" aria-hidden="true"></span>
+          <div class="hero__under" id="heroUnder">
+          <p class="hero__role" data-h><span>B.Arch candidate</span><span>UT Austin School of Architecture</span></p>
+          <p class="hero__sub" data-h>Seeking an architecture internship for summer 2027.</p>
+          <div class="hero__cta" data-h>
+            <a class="btn btn--solid" href="#work">View the work</a>
+            <a class="btn" href="./Anna-Rohn-Portfolio-2026-Lite.pdf" download>Download portfolio PDF</a>
+          </div>
+          </div>
+        </div>
+        <svg class="hero__badge" id="heroBadge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="badgeCircle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1 -156 0"/></defs>
+          <g class="badge__spin"><text><textPath href="#badgeCircle">ARCHITECTURE • PORTFOLIO • SUMMER 2027 • INTERNSHIP • </textPath></text></g>
+          <circle cx="100" cy="100" r="5"/><circle cx="100" cy="100" r="52" class="ring"/>
+        </svg>
+        <div class="hero__strip" aria-hidden="true"><span>N 30°16′</span><span>W 97°44′</span><span>SHEET A-001</span><span>COMPREHENSIVE STUDIO</span></div>
+        <button class="skipintro" id="skipIntro" type="button">Skip intro</button>
+      </div>
+    </section>
+
+    <div id="work"></div>
+    <section id="resume" class="resume" aria-labelledby="resume-h"></section>
+    <section id="gallery" class="gallery" aria-labelledby="gallery-h"></section>
+
+    <section class="plot" id="contact" aria-labelledby="contact-h">
+      <div class="plot__stage" id="plotStage">
+        <div class="paper" id="paper">
+          <div class="sheet">
+            <div class="sheet__name" aria-hidden="true">
+              <span><b>A</b><b>N</b><b>N</b><b>A</b></span>
+              <span><b>R</b><b>O</b><b>H</b><b>N</b></span>
+            </div>
+            <div class="sheet__body">
+              <h2 id="contact-h" class="sheet__h">Contact <em>— let’s build something</em></h2>
+              <ul class="sheet__list">
+                <li><span>Email</span><a href="mailto:annasrohn@gmail.com">annasrohn@gmail.com</a></li>
+                <li><span>Phone</span><a href="tel:+16789869789">+1 (678) 986-9789</a></li>
+                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/anna-rohn-bb0314a7/" rel="noopener" target="_blank">linkedin.com/in/anna-rohn</a></li>
+                <li><span>Instagram</span><a href="https://www.instagram.com/anna_rohn_art/" rel="noopener" target="_blank">@anna_rohn_art</a></li>
+                <li><span>School</span><b>UT Austin School of Architecture, B.Arch 2028</b></li>
+              </ul>
+              <div class="sheet__cta">
+                <a class="btn btn--solid" href="./Anna-Rohn-Portfolio-2026-Lite.pdf" download>Portfolio PDF (6 MB)</a>
+                <a class="btn" href="./Anna-Rohn-Portfolio-2026.pdf" download>Full-resolution PDF (44 MB)</a>
+                <a class="btn" href="./Anna-Rohn-Resume.pdf" download>Resume PDF</a>
+              </div>
+            </div>
+            <dl class="sheet__block" aria-label="Drawing title block">
+              <div><dt>Sheet</dt><dd>A-001 Contact</dd></div>
+              <div><dt>Project</dt><dd>Portfolio 2026</dd></div>
+              <div><dt>Drawn by</dt><dd>Anna Rohn</dd></div>
+              <div><dt>Plotted</dt><dd>Fall 2026</dd></div>
+            </dl>
+            <p class="sheet__fine">© 2026 Anna Rohn. Images and drawings are student work from the University of Texas at Austin School of Architecture; group and studio credits are listed with each project.</p>
+          </div>
+        </div>
+        <div class="gantry" id="gantry" aria-hidden="true">
+          <div class="gantry__motor gantry__motor--l"></div>
+          <div class="gantry__motor gantry__motor--r"></div>
+          <div class="gantry__rail"></div>
+          <div class="gantry__rail gantry__rail--2"></div>
+          <div class="gantry__carriage" id="carriage"><i></i></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <noscript><p style="padding:2rem">This portfolio uses JavaScript for its animations and image viewer. The PDF is available at <a href="./Anna-Rohn-Portfolio-2026-Lite.pdf">Anna-Rohn-Portfolio-2026-Lite.pdf</a> (full resolution: <a href="./Anna-Rohn-Portfolio-2026.pdf">44 MB</a>).</p></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
